@@ -18,19 +18,20 @@
 
         .main-box {
             display: inline-block;
-            width: 22%;
-            height: 460px;
-            border: 2px solid red;
+            width: 22vw;
+            height: 470px;
+            /* border: 2px solid red; */
             border-radius: 17px;
-            margin: 20px 17px;
+            margin: 25px 67px;
             background-color: white;
+            box-shadow: 3px 6px 10px black;
 
         }
 
         .main-box img {
             width: 100%;
             border-radius: 15px 15px 0px 0px;
-            /* object-fit: contain; */
+            object-fit: cover;
         }
 
         .tech {
@@ -42,6 +43,11 @@
             outline: none;
             cursor: pointer;
             font-family: 'Varela';
+        }
+
+        .tech:hover {
+            background: #381a8a;
+
         }
 
         .text {
@@ -87,6 +93,7 @@
             left: 33%;
             bottom: 158%;
         }
+
         .food {
             background: linear-gradient(to right, #f1d639, #e6d92e);
             padding: 3px 9px;
@@ -97,6 +104,12 @@
             cursor: pointer;
             font-family: 'Varela';
         }
+
+        .food:hover {
+
+            color: black;
+        }
+
         .race {
             background: linear-gradient(to right, #d10606, #e62e2e);
             padding: 3px 9px;
@@ -106,6 +119,14 @@
             outline: none;
             cursor: pointer;
             font-family: 'Varela';
+        }
+
+        .race:hover {
+            opacity: 0.7;
+        }
+
+        #third {
+            position: absolute;
         }
     </style>
 </head>
@@ -144,8 +165,8 @@
         </div>
     </div>
 
-    <div class="main-box">
-        <img src="r.jpg" alt="">
+    <div class="main-box " id="third">
+        <img src="r.jpg">
         <button class="race">Racing</button>
         <div class="text">
             <h3>race to your heart content</h3>
